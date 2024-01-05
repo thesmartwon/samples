@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Music samples",
   "scripts": {
-    "build": "node indexer.js"
+    "build": "node indexer.mjs"
   },
   "repository": {
     "type": "git",

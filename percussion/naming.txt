@@ -1,0 +1,31 @@
+1. Use human-readable names. They won't be renamed in-app.
+	1.a. Spell out "high", "mid", and "low".
+2. Follow the (noun)(-adjective)?(-variation)? pattern where `variation` is usually a number.
+4. Everything lowercase.
+5. Put the best variations first alphabetically.
+6. When pitching sounds (toms, rims, cymbals), put the highest pitch samples first.
+
+The (noun)(-adjective)? part will be used to group in-app.
+
+
+Examples:
+- conga-low-1
+- crash-1
+- hat-closed-1
+
+Common names:
+- clap
+- claves
+- conga
+- cowbell
+- crash
+- cymbal
+- hat-closed
+- hat-open
+- kick
+- maraca
+- ride
+- rim
+- snare
+- tom
+

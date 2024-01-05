@@ -1,0 +1,18 @@
+{
+  "name": "samples",
+  "version": "1.0.0",
+  "description": "Music samples",
+  "scripts": {
+    "build": "node indexer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thesmartwon/samples.git"
+  },
+  "author": "thesmartwon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thesmartwon/samples/issues"
+  },
+  "homepage": "https://github.com/thesmartwon/samples#readme"
+}

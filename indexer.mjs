@@ -8,21 +8,14 @@ const index = {
 		// folder: [files without ext],
 	},
 	'strings': {
-		'splendid-grand-piano': readdirSync('./strings/splendid-grand-piano').map(stripExt),
 	}
 };
 
-readdirSync('percussion').forEach(p => {
-	const maybeFolder = join('percussion', p);
-	if (statSync(maybeFolder).isDirectory()) {
-		index.percussion[p] = readdirSync(maybeFolder).map(stripExt);
-	}
+Object.keys(index).forEach(folder => {
+	readdirSync(folder).forEach(p => {
+		const subFolder = join(folder, p);
+		if (statSync(subFolder).isDirectory()) index[folder][p] = readdirSync(subFolder).map(stripExt);
+	});
 });
-
-
-// categories.forEach(c => {
-// 	const files = readdirSync(c);
-// 	index[categories] =
-// }
 
 writeFileSync('index.json', JSON.stringify(index, null, 2));

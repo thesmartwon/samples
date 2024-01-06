@@ -5,14 +5,16 @@ const stripExt = f => f.replace(/\..*/, '');
 const isSound = f => ['ogg', 'm4a', 'wav'].some(ext => f.endsWith(ext));
 
 const index = {
-	'percussion': {
+	percussion: {
 		// folder: [files without ext],
 	},
-	'strings': {
-	}
+	strings: {},
+	wind: {},
+	electronic: {}
 };
 
 Object.keys(index).forEach(folder => {
+	if (!statSync(folder).isDirectory()) return;
 	readdirSync(folder).forEach(p => {
 		const subFolder = join(folder, p);
 		if (statSync(subFolder).isDirectory()) {
